@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import "globals";
+
+* {
+  font-family: "Staatliches", cursive;
+}
+body {
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#wrapper {
+  width: 470px;
+  margin: 2rem;
+  background-color: #010101;
+  color: #1ed561;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+#timer {
+  width: 350px;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#pomodoro-input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#clock-task {
+  height: 40px;
+  margin-right: 1rem;
+  width: 350px;
+}
+
+#clock-title {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.inputFields {
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #1ed561;
+  outline: none;
+}
+
+#input-work-duration,
+#input-break-duration {
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  width: 350px;
+}
+
+#timer {
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+#clock {
+  margin-bottom: 1rem;
+}
+
+#info span {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #1ed561;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    color: #e6e6d4;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  body {
+    background-color: #010101;
+  }
+  #wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  #clock-task {
+    width: 275px;
+  }
+  #timer {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 424px) {
+  #wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  #clock-task {
+    width: 150px;
+    height: 30px;
+    font-size: 70%;
+  }
+  #timer {
+    width: 100px;
+    text-align: center;
+  }
+  .top {
+    margin-bottom: 1rem;
+  }
+
+  body {
+    background-color: #010101;
+  }
+
+  #input-work-duration,
+  #input-break-duration {
+    width: 150px;
+    margin-bottom: 1rem;
+    height: 30px;
+  }
+  #pomodoro-input {
+    font-size: 70%;
+  }
+  #clock-title {
+    font-size: 80%;
+  }
+}

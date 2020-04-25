@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  font-family: "Staatliches", cursive;
+}
+
+body {
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#wrapper {
+  width: 470px;
+  margin: 2rem;
+  background-color: #010101;
+  color: #1ed561;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+#timer {
+  width: 350px;
+  text-align: center;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#pomodoro-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#clock-task {
+  height: 40px;
+  margin-right: 1rem;
+  width: 350px;
+}
+
+#clock-title {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.inputFields {
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #0ab4b4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #1ed561;
+  outline: none;
+}
+
+#input-work-duration,
+#input-break-duration {
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  width: 350px;
+}
+
+#timer {
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+#clock {
+  margin-bottom: 1rem;
+}
+
+#info span {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #1ed561;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: #e6e6d4;
+}
+
+ul {
+  list-style: none;
+}
+
+@media only screen and (min-device-width: 425px) and (max-device-width: 768px) {
+  body {
+    background-color: #010101;
+  }
+  #wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  #clock-task {
+    width: 275px;
+  }
+  #timer {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 424px) {
+  #wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  #clock-task {
+    width: 150px;
+    height: 30px;
+    font-size: 70%;
+  }
+  #timer {
+    width: 100px;
+    text-align: center;
+  }
+  .top {
+    margin-bottom: 1rem;
+  }
+  body {
+    background-color: #010101;
+  }
+  #input-work-duration,
+  #input-break-duration {
+    width: 150px;
+    margin-bottom: 1rem;
+    height: 30px;
+  }
+  #pomodoro-input {
+    font-size: 70%;
+  }
+  #clock-title {
+    font-size: 80%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
