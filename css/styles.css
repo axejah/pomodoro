@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -83,11 +83,11 @@ select {
 }
 
 * {
-  font-family: "Staatliches", cursive;
+  font-family: "Share Tech Mono", monospace;
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #05668d;
   overflow: hidden;
 }
 
@@ -98,8 +98,8 @@ body {
 #wrapper {
   width: 470px;
   margin: 2rem;
-  background-color: #010101;
-  color: #1ed561;
+  background-color: #eeeeee;
+  color: #00adb5;
   border-radius: 30px;
   padding: 1rem;
 }
@@ -156,9 +156,12 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  background: rgba(255, 255, 255, 0.2);
-  color: #1ed561;
+  color: #00adb5;
   outline: none;
+}
+
+input {
+  background-color: #eee;
 }
 
 #input-work-duration,
@@ -185,14 +188,14 @@ body {
 button {
   background: none;
   border: none;
-  color: #1ed561;
+  color: #00adb5;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 button:hover {
-  color: #e6e6d4;
+  color: #028090;
 }
 
 ul {
